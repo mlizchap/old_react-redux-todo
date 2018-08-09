@@ -7,7 +7,7 @@ export default function(state=[], action) {
             return [...state, {name: action.payload, completed: false }];
         case MARK_COMPLETE:
             return state.map(todo => {
-                return (todo.name == action.payload) ? {...todo, completed: !todo.completed} : todo
+                return (todo.name === action.payload) ? {...todo, completed: !todo.complete} : todo
             })
         case DELETE_TODO: 
             return state.filter(todo => {

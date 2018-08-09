@@ -7,17 +7,33 @@
 .addTodoInput {
     outline: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(124, 132, 253);
     background-color: inherit;
     font-family: inherit;
     font-size: 16pt;
     width: 80%;
+    font-size: 22pt;
 }
 
+.addTodoInput:focus {
+    border-bottom: 2px solid #55e7c8;
+    border-image: linear-gradient(to right, #42d9f4 , rgb(124, 132, 253));
+    border-image-slice: 1;
+  }
 
 .submitBtn {
     outline: none;
     border: none;
     font-size: 20pt;
     background-color: inherit;
+    color: rgb(124, 132, 253);
+}
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+.errorMessage, .errorMessage > p {
+    color: #db4646;
+    margin-bottom: 0;
+    margin-top: 2px;
 }

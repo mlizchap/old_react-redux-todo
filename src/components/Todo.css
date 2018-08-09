@@ -2,15 +2,19 @@
     margin: 20px;
     padding: 10px;
     width: 40%;
-    background-color: #2374AB;
-    color: white;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid black;
-    font-size: 14pt;
+    border: 1px solid black;
+    font-size: 22pt;
 }
 .title {
     display: inline;
+    text-decoration: none;
+}
+
+.title:hover {
+    cursor: pointer;
+    text-decoration: aqua line-through;
 }
 
 .btns {
@@ -20,10 +24,16 @@
 
 button {
     display: inline;
-    background-color: rgb(243, 243, 120);
+    background-color: #f3f378;
     margin-right: 10px;
     border: none;
     outline: none;
     vertical-align: middle;
     font-family: inherit;
+    font-size: 14pt;
+}
+
+button:hover {
+    background-color: #f3f3b4;
+    cursor: pointer;
 }
